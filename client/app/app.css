@@ -57,8 +57,16 @@
 }
 
 .menuLeft{
+    position: fixed;
+    left: 4%;
+    top: 4%;
 
+}
+.menuLeft .menu{
+    position: fixed;
+    left: 8%;
 
+    
 }
 body { 
     color: #ffffff;
@@ -79,6 +87,10 @@ body {
     list-style-type: none;
     width: 11em;
 }
+.menu-title {
+    font-size: 30px;
+    font-weight: bold;
+}
 .menu li {
     
     float: left;
@@ -86,24 +98,16 @@ body {
 .menu li.sub {
     
 }
-.menu table {
-    position: absolute;
-    border-collapse: collapse;
-    top: 0pt;
-    left: 0pt;
-    z-index: 100;
-    font-size: 1em;
-    margin-top: -1px;
-}
+
 .menu a, .menu a:visited {
    
     display: block;
     text-decoration: none;
-    height: 2em;
-    line-height: 2em;
+    height: 12px;
+    line-height: 12px;
     width: 11em;
     color: #ffffff;
-    padding-left: 1em;
+  
     font-weight: normal;
     font-style: normal;
     font-variant: normal;

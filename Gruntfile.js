@@ -2,6 +2,7 @@
 'use strict';
 
 module.exports = function (grunt) {
+  grunt.loadNpmTasks('grunt-angular-gettext')
   var localConfig;
   try {
     localConfig = require('./server/config/local.env');
@@ -24,7 +25,19 @@ module.exports = function (grunt) {
 
   // Define the configuration for all the tasks
   grunt.initConfig({
-
+    nggettext_extract: {
+      pot: {
+        files: {
+            'po/template.pot': ['**/*.html']
+        }
+      }
+    },nggettext_compile: {
+      pot: {
+        files: {
+            'translation.js': ['po/*.po']
+        }
+      }
+    },
     // Project settings
     pkg: grunt.file.readJSON('package.json'),
     yeoman: {
@@ -615,4 +628,6 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  ;
 };
