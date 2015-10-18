@@ -1,0 +1,47 @@
+#
+# (null) <>, 2015.
+# (null) <>, 2015.
+# (null) <>, 2015.
+# (null) <>, 2015.
+# (null) <>, 2015.
+# (null) <>, 2015.
+# (null) <>, 2015.
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2015-10-04 19:42+0200\n"
+"X-Generator: Gtranslator 2.91.6\n"
+"Language: fr\n"
+
+#: client/index.html:51 client/index.html:62 client/index.html:73
+#: client/index.html:84
+msgid "GRAVURE"
+msgstr "GRAVURE"
+
+#: client/index.html:44
+msgid "L'Oeuvre"
+msgstr "L'Oeuvre"
+
+#: client/index.html:48
+msgid "LA MEMOIRE"
+msgstr "LA MEMOIRE"
+
+#: client/index.html:59
+msgid "NATURE MORTE"
+msgstr "NATURE MORTE"
+
+#: client/index.html:70
+msgid "PAYSAGES"
+msgstr "PAYSAGES"
+
+#: client/index.html:54 client/index.html:65 client/index.html:76
+#: client/index.html:87
+msgid "PEINTURE"
+msgstr "PEINTURE"
+
+#: client/index.html:81
+msgid "PORTRAIT"
+msgstr "PORTRAIT"

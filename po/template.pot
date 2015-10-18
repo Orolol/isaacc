@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: client/index.html:51
+#: client/index.html:62
+#: client/index.html:73
+#: client/index.html:84
+msgid "GRAVURE"
+msgstr ""
+
+#: client/index.html:44
+msgid "L'Oeuvre"
+msgstr ""
+
+#: client/index.html:48
+msgid "LA MEMOIRE"
+msgstr ""
+
+#: client/index.html:59
+msgid "NATURE MORTE"
+msgstr ""
+
+#: client/index.html:70
+msgid "PAYSAGES"
+msgstr ""
+
+#: client/index.html:54
+#: client/index.html:65
+#: client/index.html:76
+#: client/index.html:87
+msgid "PEINTURE"
+msgstr ""
+
+#: client/index.html:81
+msgid "PORTRAIT"
+msgstr ""
