@@ -1,0 +1,13 @@
+{
+	"memoire": {
+		"gravee": {
+			"images": 	[
+			{ "src": "assets/images/memoire/gravee/1.jpg",	"title": "Pic 1"}, 
+			{ "src": "assets/images/memoire/gravee/2.jpg",	"title": "Pic 2"},
+			{ "src": "assets/images/memoire/gravee/3.jpg",	"title": "Pic 3"}, 
+			{ "src": "assets/images/memoire/gravee/4.jpg",	"title": "Pic 4"}]
+		}
+	}
+
+}
+

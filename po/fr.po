@@ -1,47 +1,74 @@
-#
-# (null) <>, 2015.
-# (null) <>, 2015.
-# (null) <>, 2015.
-# (null) <>, 2015.
-# (null) <>, 2015.
-# (null) <>, 2015.
-# (null) <>, 2015.
-#
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2015-10-04 19:42+0200\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.5.4\n"
 "Language: fr\n"
 
-#: client/index.html:51 client/index.html:62 client/index.html:73
-#: client/index.html:84
+#: client/index.html:100
+msgid "BIOGRAPHIE"
+msgstr "BIOGRAPHIE"
+
+#: client/index.html:106
+msgid "CATALOGUE"
+msgstr "CATALOGUE"
+
+#: client/index.html:109
+msgid "CONTACT"
+msgstr "CONTACT"
+
+#: client/partials/accueil.html:9
+msgid "ENGLISH"
+msgstr "ENGLISH"
+
+#: client/index.html:103
+msgid "EXPOSITION"
+msgstr "EXPOSITION"
+
+#: client/partials/accueil.html:6
+msgid "FRANCAIS"
+msgstr "FRANCAIS"
+
+#: client/index.html:50 client/index.html:61 client/index.html:72
+#: client/index.html:83
 msgid "GRAVURE"
 msgstr "GRAVURE"
 
-#: client/index.html:44
-msgid "L'Oeuvre"
-msgstr "L'Oeuvre"
+#: client/index.html:96
+msgid "L'HOMME"
+msgstr "L'HOMME"
 
-#: client/index.html:48
+#: client/index.html:43
+msgid "L'OEUVRE"
+msgstr "L'OEUVRE"
+
+#: client/index.html:47
 msgid "LA MEMOIRE"
 msgstr "LA MEMOIRE"
 
-#: client/index.html:59
+#: client/index.html:58
 msgid "NATURE MORTE"
 msgstr "NATURE MORTE"
 
-#: client/index.html:70
+#: client/index.html:69
 msgid "PAYSAGES"
 msgstr "PAYSAGES"
 
-#: client/index.html:54 client/index.html:65 client/index.html:76
-#: client/index.html:87
+#: client/index.html:53 client/index.html:64 client/index.html:75
+#: client/index.html:86
 msgid "PEINTURE"
 msgstr "PEINTURE"
 
-#: client/index.html:81
+#: client/partials/accueil.html:12
+msgid "POLISH"
+msgstr "POLISH"
+
+#: client/index.html:80
 msgid "PORTRAIT"
 msgstr "PORTRAIT"

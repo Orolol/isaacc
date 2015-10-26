@@ -48,7 +48,7 @@
 
 }
 
-.oeuvre-titre{
+.oeuvre-texte-titre{
 
     text-align: right;
     font-weight: bold;
@@ -74,21 +74,84 @@
 }
 
 .oeuvre-img img{
-    max-width: 350px;
+    position: fixed;
+    max-width: 20%;
 }
 
+
+
 .oeuvre-num{
+
     text-align: center;
     font-weight: bold;
 }
 
-.oeuvre-titre{
+.oeuvre-box{
     position: fixed;
-    left: 68%;
+    width: 400px;
+    height: 200px;
+    left: 60%;
+    top: 90%;
+}
+
+.oeuvre-titre{
+    position: absolute;
+    white-space: nowrap;
+    
 }
 
 .oeuvre-details{
+    position: absolute;
+    left: 200px;
+}
 
+.slide.ng-hide-add,
+.slide.ng-hide-remove {
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  display: block!important;
+}
+.slide.ng-hide-add.ng-hide-add-active,
+.slide.ng-hide-remove {
+  opacity: 0;
+}
+.slide.ng-hide-add,
+.slide.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1;
+}
+
+.center-grey {
+  background: #f2f2f2;
+}
+.slider {
+  position: relative;
+  padding: 5px;
+  width: 610px;
+  margin: auto;
+ 
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 15px #999;
+}
+.arrows {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  max-width: 30px;
+}
+.arrows img {
+  height: 32px;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  color: #222;
 }
 
 
@@ -115,9 +178,10 @@ html, body, .mainMenu, .oeuvre, .homme, .ng-scope {
 }
 
 .accueil{
-    height: 1306px;
-    width: 100%;
+ 
+    
     background-image: url("/assets/images/accueil.JPG") ;
+    background-size: 100%;
     color: #ffffff;
 }
 .mainMenu{

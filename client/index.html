@@ -25,7 +25,8 @@
   <script src="lib/angular-route.js"></script> 
   <script src="lib/ui-bootstrap.js"></script> 
   <script src="lib/angular-gettext.min.js"></script> 
-  <script src="po/translation.js"></script> 
+
+  <script src="lib/angular-animate.min.js"></script>
 
 
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
@@ -37,8 +38,8 @@
 </head>
 <body>
   <div ng-app="wssApp"  ng-controller="MainCtrl">
-      <div ng-view></div>
-      <div> 
+    <div ng-view></div>
+    <div> 
       <div class="menuLeft" ng-show="showMenu()">
         <p class="menu-title" translate>L'OEUVRE</p>
         <div class="menu">
@@ -47,10 +48,10 @@
               <a href="#"><p translate>LA MEMOIRE</p></a> 
               <ul>
                 <li>
-                  <a href="#/page/oeuvre/memoire/gravure"><p translate>GRAVURE</p></a>
+                  <a href="/page/oeuvre/memoire/gravure"><p translate>GRAVURE</p></a>
                 </li>
                 <li>
-                  <a href="#/page/oeuvre/memoire/peinture"><p translate>PEINTURE</p></a> 
+                  <a href="/page/oeuvre/memoire/peinture"><p translate>PEINTURE</p></a> 
                 </li>
               </ul>
             </li>
@@ -58,10 +59,10 @@
               <a href="#"><p translate>NATURE MORTE</p></a> 
               <ul>
                 <li>
-                  <a href="#/page/oeuvre/nature/gravure"><p translate>GRAVURE</p></a>
+                  <a href="/page/oeuvre/nature/gravure"><p translate>GRAVURE</p></a>
                 </li>
                 <li>
-                  <a href="#/page/oeuvre/nature/peinture"><p translate>PEINTURE</p></a> 
+                  <a href="/page/oeuvre/nature/peinture"><p translate>PEINTURE</p></a> 
                 </li>
               </ul>
             </li>
@@ -69,10 +70,10 @@
               <a href="#"><p translate>PAYSAGES</p></a> 
               <ul>
                 <li>
-                  <a href="#/page/oeuvre/paysages/gravure"><p translate>GRAVURE</p></a>
+                  <a href="/page/oeuvre/paysages/gravure"><p translate>GRAVURE</p></a>
                 </li>
                 <li>
-                  <a href="#/page/oeuvre/peinture/peinture"><p translate>PEINTURE</p></a> 
+                  <a href="/page/oeuvre/peinture/peinture"><p translate>PEINTURE</p></a> 
                 </li>
               </ul>
             </li>
@@ -80,10 +81,10 @@
               <a href="#"><p translate>PORTRAIT</p></a> 
               <ul>
                 <li>
-                  <a href="#/page/oeuvre/portrait/gravure"><p translate>GRAVURE</p></a>
+                  <a href="/page/oeuvre/portrait/gravure"><p translate>GRAVURE</p></a>
                 </li>
                 <li>
-                  <a href="#/page/oeuvre/protrait/peinture"><p translate>PEINTURE</p></a> 
+                  <a href="/page/oeuvre/protrait/peinture"><p translate>PEINTURE</p></a> 
                 </li>
               </ul>
             </li>
@@ -97,16 +98,16 @@
         <div class="menu">
           <ul>
             <li>
-              <a href="#/page/homme/biographie/biographie"><p translate>BIOGRAPHIE</p></a> 
+              <a href="/page/homme/biographie/biographie"><p translate>BIOGRAPHIE</p></a> 
             </li>
             <li>
-              <a href="#/page/homme/exposition/exposition"><p translate>EXPOSITION</p></a> 
+              <a href="/page/homme/exposition/exposition"><p translate>EXPOSITION</p></a> 
             </li>
             <li>
-              <a href="#/page/homme/catalogue/catalogue"><p translate>CATALOGUE</p></a> 
+              <a href="/page/homme/catalogue/catalogue"><p translate>CATALOGUE</p></a> 
             </li>
             <li>
-              <a href="#/page/homme/contact/contact"><p translate>CONTACT</p></a> 
+              <a href="/page/homme/contact/contact"><p translate>CONTACT</p></a> 
             </li>
           </ul>
         </div>
@@ -115,12 +116,14 @@
       <div class="isaacTopRight" ng-show="showIsaac()">ISAAC CELNIKIER</div>
     </div>
 
-  
-</div>
-<!-- build:js({.tmp,client}) app/app.js -->
-<script src="app/app.js"></script>
-<!-- injector:js -->
-<!-- endinjector -->
-<!-- endbuild -->
+    
+  </div>
+  <!-- build:js({.tmp,client}) app/app.js -->
+  <script src="app/app.js"></script>
+  <script src="po/translation.js"></script> 
+  <!-- injector:js -->
+  <!-- endinjector -->
+  <!-- endbuild -->
+
 </body>
 </html>
