@@ -19,9 +19,14 @@ var wssApp = angular.module('wssApp', [
   .when('/mainMenu/:language?', {
     templateUrl: 'partials/mainMenu.html',
     controller: 'MainCtrl'
-  }).when('/page/:name*', {
+  }).when('/page/oeuvre:nameOeuvre*', {
     templateUrl: function(urlattr){
-      return 'partials/'+ urlattr.name +  '.html';
+      return 'partials/oeuvre/'+ urlattr.nameOeuvre +  '.html';
+    },
+    controller: 'MainCtrl'
+  }).when('/page/homme/:nameHomme*', {
+    templateUrl: function(urlattr){
+      return 'partials/homme/'+ urlattr.nameHomme +  '.html';
     },
     controller: 'MainCtrl'
   }).when('/show/:name*', {
@@ -43,6 +48,7 @@ wssApp.service("menuService", [
     var showMenu = false;
     var showIsaac = false;
     var language = 'fr';
+    var menuColor = 'menuWhite'
     this.getLanguage = function() {
       return language;
     };
@@ -61,21 +67,41 @@ wssApp.service("menuService", [
     this.setShowMenu = function(bool) {
       showMenu = bool;
     };
+    this.getMenuColor = function() {
+      return menuColor;
+    };
+    this.setMenuColor = function(bool) {
+      menuColor = bool;
+    };
   }
   ]);
 
 wssApp.controller('MainCtrl', ['$scope','$routeParams', 'menuService' ,'gettextCatalog' ,
   function($scope, $routeParams, menuService, gettextCatalog){
+    $scope.ColorMenu  = "menuWhite";
+
     if($routeParams.language !== undefined){
       menuService.setShowMenu(true); 
       menuService.setLanguage($routeParams.language);
       gettextCatalog.setCurrentLanguage(menuService.getLanguage()); 
       
     }  
-    if($routeParams.name !== undefined){
+    if($routeParams.nameOeuvre !== undefined){
+      console.log('oeuvre');
+      menuService.setMenuColor("menuWhite");
       menuService.setShowMenu(true);
       menuService.setShowIsaac(true); 
       gettextCatalog.setCurrentLanguage(menuService.getLanguage()); 
+      
+      
+    }
+     if($routeParams.nameHomme !== undefined){
+      console.log('homme');
+      menuService.setMenuColor("menuBlack");
+      menuService.setShowMenu(true);
+      menuService.setShowIsaac(true); 
+      gettextCatalog.setCurrentLanguage(menuService.getLanguage());
+       
     }
 
     $scope.showIsaac = function () {
@@ -84,9 +110,12 @@ wssApp.controller('MainCtrl', ['$scope','$routeParams', 'menuService' ,'gettextC
     $scope.showMenu = function () {
       return menuService.getShowMenu();      
     };
+    $scope.getColorMenu = function () {
+      return menuService.getMenuColor();      
+    };
 
     $scope.langague = $routeParams.language;
-    console.log(menuService.getLanguage());
+    
     
   }
   ]);
@@ -107,26 +136,30 @@ wssApp.controller('SliderController',['$scope','$routeParams', 'SlideShowService
       title: 'Titre img 1',
       annee:'1987-1988',
       type:'gravure, eau-forte',
-      dimension:'40x50cm'
+      dimension:'40x50cm',
+      categorie:'LA MEMOIRE GRAVEE'
     }, {
       src: 'memoire/gravee/2.jpg',
       title: 'Titre img 2',
       annee:'1987-1988',
       type:'gravure, eau-forte',
-      dimension:'40x50cm'
+      dimension:'40x50cm',
+      categorie:'LA MEMOIRE GRAVEE'
 
     }, {
       src: 'memoire/gravee/3.jpg',
       title: 'Titre img 3',
       annee:'1987-1988',
       type:'gravure, eau-forte',
-      dimension:'40x50cm'
+      dimension:'40x50cm',
+      categorie:'LA MEMOIRE GRAVEE'
     }, {
       src: 'memoire/gravee/4.jpg',
       title: 'Titre img 4',
       annee:'1987-1988',
       type:'gravure, eau-forte',
-      dimension:'40x50cm'
+      dimension:'40x50cm',
+      categorie:'LA MEMOIRE GRAVEE'
     }];
 
     console.log(sc.images);

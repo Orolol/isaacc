@@ -67,10 +67,10 @@
 }
 
 .oeuvre-oeuvre{
- left: 50%;
- top: 40%;
+   left: 50%;
+   top: 40%;
 
- position: absolute;
+   position: absolute;
 }
 
 .oeuvre-img img{
@@ -88,13 +88,19 @@
 
 .oeuvre-box{
     position: fixed;
-    width: 400px;
+    
     height: 200px;
-    left: 60%;
-    top: 90%;
+    left: 10%;
+    top: 85%;
 }
 
 .oeuvre-titre{
+    position: absolute;
+    white-space: nowrap;
+    left: 800px;
+    
+}
+.oeuvre-categorie{
     position: absolute;
     white-space: nowrap;
     
@@ -102,10 +108,10 @@
 
 .oeuvre-details{
     position: absolute;
-    left: 200px;
+    left: 1000px;
 }
 
-.slide.ng-hide-add,
+/*.slide.ng-hide-add,
 .slide.ng-hide-remove {
   -webkit-transition: all linear 0.5s;
   -moz-transition: all linear 0.5s;
@@ -120,66 +126,65 @@
 .slide.ng-hide-add,
 .slide.ng-hide-remove.ng-hide-remove-active {
   opacity: 1;
-}
+  }*/
 
-.center-grey {
-  background: #f2f2f2;
-}
-.slider {
-  position: relative;
-  padding: 5px;
-  width: 610px;
-  margin: auto;
- 
-}
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-shadow: 0px 0px 15px #999;
-}
-.arrows {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  max-width: 30px;
-}
-.arrows img {
-  height: 32px;
-}
-h1 {
-  text-align: center;
-  padding: 10px;
-  font-size: 40px;
-  color: #222;
-}
+  .center-grey {
+      background: #f2f2f2;
+  }
+  .slider {
+      position: relative;
+      padding: 5px;
+      width: 610px;
+      margin: auto;
 
-
-.topContent{
-
-}
-
-.headContent{
-
-}
-
-.mainContent{
+  }
+  .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-shadow: 0px 0px 15px #999;
+  }
+  .arrows {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      max-width: 30px;
+  }
+  .arrows img {
+      height: 32px;
+  }
+  h1 {
+      text-align: center;
+      padding: 10px;
+      font-size: 40px;
+      color: #222;
+  }
 
 
-}
+  .topContent{
 
-.blackBackGround{
+  }
 
-}
+  .headContent{
 
-html, body, .mainMenu, .oeuvre, .homme, .ng-scope {
+  }
+
+  .mainContent{
+
+
+  }
+
+  .blackBackGround{
+
+  }
+
+  html, body, .mainMenu, .oeuvre, .homme, .ng-scope {
     min-height: 100% !important;
     height: 100%;
 }
 
 .accueil{
- 
-    
+
     background-image: url("/assets/images/accueil.JPG") ;
     background-size: 100%;
     color: #ffffff;
@@ -242,7 +247,7 @@ body {
 .menu-title {
     font-size: 22px;
     font-weight: bold;
-    color: #ffffff;
+    
 }
 .menu li {
 
@@ -257,6 +262,23 @@ body {
     line-height: normal;
 }
 
+.menuWhite a, .menuWhite a:visited {
+  color: #ffffff;
+}
+
+.menuBlack a, .menuBlack a:visited {
+  color: #000000;
+}
+
+.menuWhite{
+  color: #ffffff;
+}
+
+.menuBlack{
+  color: #000000;
+}
+
+
 .menu a, .menu a:visited {
 
     display: block;
@@ -264,8 +286,6 @@ body {
     height: 12px;
     line-height: 1px;
     width: 11em;
-    color: #ffffff;
-
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
@@ -386,4 +406,42 @@ body {
     position: absolute;
 }
 
+.bioHeader{
+  position: absolute;
+  top: 128px;
+  left:20%;
+  font-size: 26px;
+  width: 550px;
+}
 
+.bioImage1{
+  position : absolute;
+  left: 48%;
+  top: 360px;
+}
+
+.bioPart1{
+  position: absolute;
+  left: 24%;
+  top: 950px;
+  width: 550px;
+}
+
+.bioPart2{
+  position: absolute;
+  left: 24%;
+  top: 1350px;
+  width: 750px;
+}
+.bioPart3{
+  position: absolute;
+  left: 24%;
+  top: 1750px;
+  width: 750px;
+}
+.bioPart4{
+  position: absolute;
+  left: 24%;
+  top: 2150px;
+  width: 750px;
+}

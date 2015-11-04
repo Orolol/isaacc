@@ -40,8 +40,8 @@
   <div ng-app="wssApp"  ng-controller="MainCtrl">
     <div ng-view></div>
     <div> 
-      <div class="menuLeft" ng-show="showMenu()">
-        <p class="menu-title" translate>L'OEUVRE</p>
+      <div class="menuLeft" ng-show="showMenu()" ng-class="getColorMenu()">
+        <p class="menu-title" ng-class="getColorMenu()" translate>L'OEUVRE</p>
         <div class="menu">
           <ul>
             <li>
@@ -93,12 +93,26 @@
         </div>
 
       </div>
-      <div class="menuRight" ng-show="showMenu()">
-        <p class="menu-title" translate>L'HOMME</p>
+      <div class="menuRight" ng-show="showMenu()" ng-class="getColorMenu()">
+        <p class="menu-title" ng-class="getColorMenu()" translate>L'HOMME</p>
         <div class="menu">
           <ul>
             <li>
               <a href="/page/homme/biographie/biographie"><p translate>BIOGRAPHIE</p></a> 
+              <ul>
+                <li>
+                  <a href="/page/homme/biographie/biographie#part1"><p>1923-1939</p></a>
+                </li>
+                <li>
+                  <a href="/page/homme/biographie/biographie#part2"><p>1940-1956</p></a> 
+                </li>
+                <li>
+                  <a href="/page/homme/biographie/biographie#part3"><p>1957-1980</p></a>
+                </li>
+                <li>
+                  <a href="/page/homme/biographie/biographie#part4"><p>1981-2011</p></a> 
+                </li>
+              </ul>
             </li>
             <li>
               <a href="/page/homme/exposition/exposition"><p translate>EXPOSITION</p></a> 
@@ -113,7 +127,7 @@
         </div>
 
       </div>
-      <div class="isaacTopRight" ng-show="showIsaac()">ISAAC CELNIKIER</div>
+      <div class="isaacTopRight" ng-show="showIsaac()" ng-class="getColorMenu()">ISAAC CELNIKIER</div>
     </div>
 
     

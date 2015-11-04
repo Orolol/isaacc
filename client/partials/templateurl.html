@@ -1,11 +1,13 @@
 <div class="slider-cont">
   <div class="slider">
-  <div class="slide" ng-repeat="image in images" ng-show="image.visible">
-    <img ng-src="assets/images/{{image.src}}"  ng-click="next()"/>
-    <div class="oeuvre-box">
-      <div class="oeuvre-titre"><span>{{image.title}}</span></div>
-      <div class="oeuvre-details"><span>{{image.annee}}<br>{{image.type}}<br>{{image.dimension}}</span></div>
+    <div class="slide" ng-repeat="image in images" ng-show="image.visible">
+      <img ng-src="assets/images/{{image.src}}"  ng-click="next()"/>
+      <div class="oeuvre-box">
+        <div class="oeuvre-categorie"><span translate>{{image.categorie}}</span></div>
+
+        <div class="oeuvre-titre"><span>{{image.title}}</span></div>
+        <div class="oeuvre-details"><span>{{image.annee}}<br>{{image.type}}<br>{{image.dimension}}</span></div>
+      </div>
     </div>
   </div>
-</div>
 </div>
