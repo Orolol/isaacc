@@ -76,8 +76,28 @@ wssApp.service("menuService", [
   }
   ]);
 
-wssApp.controller('MainCtrl', ['$scope','$routeParams', 'menuService' ,'gettextCatalog' ,
-  function($scope, $routeParams, menuService, gettextCatalog){
+wssApp.controller('MainCtrl', ['$scope','$routeParams', 'menuService' ,'gettextCatalog' , '$http',
+  function($scope, $routeParams, menuService, gettextCatalog, $http){
+
+
+
+
+    $scope.expos = {};
+
+    $http({
+      method: 'GET',
+      url: '/assets/expo.json'
+    })
+    .success(function (data, status, headers, config) {
+
+      $scope.expos =  data.expo;
+      console.log(status);
+    })
+    .error(function (data, status, headers, config) {
+
+    });
+
+
     $scope.ColorMenu  = "menuWhite";
 
     if($routeParams.language !== undefined){
@@ -95,13 +115,13 @@ wssApp.controller('MainCtrl', ['$scope','$routeParams', 'menuService' ,'gettextC
       
       
     }
-     if($routeParams.nameHomme !== undefined){
+    if($routeParams.nameHomme !== undefined){
       console.log('homme');
       menuService.setMenuColor("menuBlack");
       menuService.setShowMenu(true);
       menuService.setShowIsaac(true); 
       gettextCatalog.setCurrentLanguage(menuService.getLanguage());
-       
+
     }
 
     $scope.showIsaac = function () {
@@ -128,7 +148,17 @@ wssApp.factory('SlideShowService', function ($http) {
   };
 });
 
-wssApp.controller('SliderController',['$scope','$routeParams', 'SlideShowService', '$http', function(sc, $routeParams, SlideShowService, $http) {
+wssApp.factory('ExpositionService', function ($http) {
+  return {
+    get: function () {
+      return angular.fromJson($http.get('/assets/expo.json'));
+    }
+  };
+});
+
+wssApp.controller('SliderController',['$scope','$routeParams', 'SlideShowService', '$http', function(sc, $routeParams, ExpositionService , SlideShowService, $http) {
+
+
 
   if($routeParams.name = "memoire/gravee"){
     sc.images = [{

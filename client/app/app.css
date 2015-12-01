@@ -222,9 +222,15 @@
 .menuLeft .menu{
     position: fixed;
     left: 6%;
-
-    
+    top: 11%;    
 }
+
+.menuRight .menu{
+    position: fixed;
+    left: 84%;
+    top: 24%;    
+}
+
 body { 
     font:book;
 
@@ -233,7 +239,7 @@ body {
 .rad3.rad4.rad5.rad6.rad7.menu {
     margin: 10px;
     height: 100px;
-    font-size: 12pt;
+    font-size: 14pt;
     font-family: roman;
 }
 .menu ul {
@@ -326,7 +332,7 @@ body {
     text-decoration: none;
     text-transform: none;
 }
-.menu li ul {
+.menuLeft .menu li ul {
     padding: 2em;
     visibility: hidden;
     position: absolute;
@@ -334,6 +340,16 @@ body {
     left: 11em;
     background-color: transparent;
 }
+
+.menuRight .menu li ul {
+    padding: 2em;
+    visibility: hidden;
+    position: absolute;
+    top: -2em;
+    left: -13em;
+    background-color: transparent;
+}
+
 .menu li:hover > ul {
     visibility: visible;
 }
@@ -370,8 +386,6 @@ body {
     font-weight: bold;
     text-align: center;
     letter-spacing: 30px;
-
-
 }
 .mosaiqueIm1{
     background-color: #111111;
@@ -444,4 +458,27 @@ body {
   left: 24%;
   top: 2150px;
   width: 750px;
+}
+
+.exposition {
+  position: absolute;
+  top: 25%;
+  left: 18%;
+}
+
+.expo-id{
+  width: 10px;
+  font-size: 12px;
+}
+
+.expo-lieu{
+   width: 600px;
+}
+
+.expo-pays{
+width: 80px;
+}
+
+.expo-annee{
+width: 40px;
 }
