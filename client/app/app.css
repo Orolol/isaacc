@@ -467,8 +467,9 @@ body {
 }
 
 .expo-id{
-  width: 10px;
-  font-size: 12px;
+  width: 15px;
+  font-size: 10px !important;
+  padding-bottom: 5px;
 }
 
 .expo-lieu{
@@ -481,4 +482,49 @@ width: 80px;
 
 .expo-annee{
 width: 40px;
+}
+
+.titre-exposition {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+  padding-bottom: 10px;
+
+}
+
+.tableau-exposition td {
+  border-bottom: solid 1px;
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  padding-top: 7px;
+}
+
+.contact-1{
+  position: fixed;
+  left: 40%;
+  top: 30%;
+}
+
+.contact-1 span{
+  font-size: 12px;
+}
+
+.contact-2{
+  position: fixed;
+  left: 20%;
+  top: 60%;
+}
+.contact-2 span{
+  font-size: 12px;
+}
+
+.contact-2 a, .contact-1 a{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-style: normal;
+    font-variant: normal;
+    text-decoration: none;
+    text-transform: none;
+    color: black;
 }
