@@ -1,0 +1,34 @@
+<div class="homme">
+	<div class="exposition">
+		<div class="titre-exposition">
+			EXPOSITIONS INDIVIDUELLES
+		</div>
+		<div class="tableau-exposition">
+			<table>
+				<tr ng-repeat="expo in expos">
+					<td class="expo-id">{{ expo.id }}</td>
+					<td class="expo-annee">{{ expo.annee }}</td>
+					<td class="expo-pays">{{ expo.pays }}</td>
+					<td class="expo-lieu">{{ expo.lieu }}</td>
+					<td class="expo-lieu">{{ expo.nom }}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="exposition2">
+		<div class="titre-exposition">
+			EXPOSITIONS COLLECTIVES
+		</div>
+		<div class="tableau-exposition">
+			<table>
+				<tr ng-repeat="expo in expos2">
+					<td class="expo-id">{{ expo.id }}</td>
+					<td class="expo-annee">{{ expo.annee }}</td>
+					<td class="expo-pays">{{ expo.pays }}</td>
+					<td class="expo-lieu">{{ expo.lieu }}</td>
+					<td class="expo-lieu">{{ expo.nom }}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

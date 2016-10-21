@@ -86,11 +86,26 @@ wssApp.controller('MainCtrl', ['$scope','$routeParams', 'menuService' ,'gettextC
 
     $http({
       method: 'GET',
-      url: '/assets/expo.json'
+      url: '/assets/expoIndividuelles.json'
     })
     .success(function (data, status, headers, config) {
 
       $scope.expos =  data.expo;
+      console.log(status);
+    })
+    .error(function (data, status, headers, config) {
+
+    });
+
+    $scope.expos2 = {};
+
+    $http({
+      method: 'GET',
+      url: '/assets/expoGroupes.json'
+    })
+    .success(function (data, status, headers, config) {
+
+      $scope.expos2 =  data.expo;
       console.log(status);
     })
     .error(function (data, status, headers, config) {

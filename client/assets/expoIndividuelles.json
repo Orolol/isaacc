@@ -1,0 +1,117 @@
+{
+  "expo" : [{
+    "id": "1",
+    "lieu": "CHAPELLE DU COLLÈGE DE CARPENTRAS",
+    "pays": "France",
+    "annee": "1962",
+    "nom" : ""
+  },{
+    "id": "2",
+    "lieu": "GALERIE TIVEY-FAUCON, PARIS",
+    "pays": "France",
+    "annee": "1964",
+    "nom" : ""
+  },{
+    "id": "3",
+    "lieu": "GALERIE TIVEY-FAUCON, PARIS",
+    "pays": "France",
+    "annee": "1968",
+    "nom" : ""
+  },{
+    "id": "4",
+    "lieu": "GALERIE KATIA GRANOFF, PARIS",
+    "pays": "France",
+    "annee": "1969",
+    "nom" : ""
+  },{
+    "id": "5",
+    "lieu": "CITÉ INTERNATIONALE DES ARTS, PARIS",
+    "pays": "France",
+    "annee": "1972",
+    "nom" : ""
+  },{
+    "id": "7",
+    "lieu": " GALERIE CLAUDE HEMERY, PARIS",
+    "pays": "France",
+    "annee": "1981",
+    "nom" : ""
+  },{
+    "id": "8",
+    "lieu": "GALERIE CHARBONNEL, PARIS",
+    "pays": "France",
+    "annee": "1989",
+    "nom" : "SHOAH"
+  },{
+    "id": "9",
+    "lieu": "GALERIE DES ÉDITIONS DE L'HERMITAGE, PARIS",
+    "pays": "France",
+    "annee": "1990",
+    "nom" : "LA MÉMOIRE GRAVÉE"
+  },{
+    "id": "10",
+    "lieu": "MUSÉE DES AUGUSTINS, TOULOUSE",
+    "pays": "France",
+    "annee": "1991",
+    "nom" : "MÉMOIRE ET VIE"
+  },{
+    "id": "11",
+    "lieu": "SAINT-GERMAIN-EN-LAYE",
+    "pays": "France",
+    "annee": "1991",
+    "nom" : "LA MÉMOIRE GRAVÉE"
+  },{
+    "id": "12",
+    "lieu": "MÉMORIAL DU MARTYR JUIF INCONNU, PARIS",
+    "pays": "France",
+    "annee": "1992",
+    "nom" : "LA MÉMOIRE GRAVÉE. BIRUKENAU"
+  },{
+    "id": "13",
+    "lieu": "PAVILLON DU MUSÉE FABRE, MONTPELLIER",
+    "pays": "France",
+    "annee": "1993",
+    "nom" : "MÉMOIRE, RÉVOLTE, VIE,"
+  },{
+    "id": "14",
+    "lieu": "ARCHIVES DÉPARTEMENTALES DU FINISTÈRE",
+    "pays": "France",
+    "annee": "1995",
+    "nom" : "PEINTURES ET GRAVURES ORIGINALES"
+  },{
+    "id": "15",
+    "lieu": "CENTRE MONDIAL POUR LA PAIX, VERDUN",
+    "pays": "France",
+    "annee": "2005",
+    "nom" : "PEINTURES ET GRAVURES ORIGINALES"
+  },{
+    "id": "16",
+    "lieu": "MAIRIE DU IVÈME ARRONDISSEMENT DE PARIS",
+    "pays": "France",
+    "annee": "2005",
+    "nom" : "LA MÉMOIRE GRAVÉE"
+  },{
+    "id": "17",
+    "lieu": "MUSÉE D'ART ET D'HISTOIRE DU JUDAÏSME",
+    "pays": "France",
+    "annee": "2007",
+    "nom" : "REMBRANDT ET LA NOUVELLE JÉRUSALEM"
+  },{
+    "id": "18",
+    "lieu": "ALERIE LES MONTPARNOS, PARIS",
+    "pays": "France",
+    "annee": "2012",
+    "nom" : " AU COMMENCEMENT ÉTAIT LA COULEUR"
+  },{
+    "id": "19",
+    "lieu": "CIMI, DR. ERICK PETIT & ASSOCIÉS, PARIS",
+    "pays": "France",
+    "annee": "2014",
+    "nom" : "LES ANNÉES NOIRES ET RETOUR À LA LUMIÈRE"
+  },{
+    "id": "20",
+    "lieu": "SPACE CULTURE ET TRADITION, SAINTE-AGNÈS",
+    "pays": "France",
+    "annee": "2015",
+    "nom" : "PAYSAGES DE SAINTE-AGNÈS"
+  }]
+}

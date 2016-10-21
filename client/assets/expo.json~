@@ -1,0 +1,33 @@
+{
+  "expos" : [{
+    "id": "1",
+    "lieu": "CHAPELLE DU COLLÈGE DE CARPENTRAS",
+    "pays": "France",
+    "annee": "1962"
+  },{
+    "id": "2",
+    "lieu": "MUSÉE D'ISRAËL",
+    "pays": "Israël",
+    "annee": "1962"
+  },{
+    "id": "3",
+    "lieu": "MUSÉE MUNICIPAL DE HAÏFA",
+    "pays": "Israël",
+    "annee": "1962"
+  },{
+    "id": "4",
+    "lieu": "MUSÉE D'ART DE EIN HAROD",
+    "pays": "Israël",
+    "annee": "1962"
+  },{
+    "id": "5",
+    "lieu": "CHAPELLE DU COLLÈGE DE CARPENTRAS",
+    "pays": "France",
+    "annee": "1962"
+  },{
+    "id": "6",
+    "lieu": "CHAPELLE DU COLLÈGE DE CARPENTRAS",
+    "pays": "France",
+    "annee": "1962"
+  }]
+}

@@ -181,6 +181,7 @@
   html, body, .mainMenu, .oeuvre, .homme, .ng-scope {
     min-height: 100% !important;
     height: 100%;
+    font-family: sans-serif;
 }
 
 .accueil{
@@ -437,26 +438,26 @@ body {
 .bioPart1{
   position: absolute;
   left: 24%;
-  top: 950px;
+  top: 850px;
   width: 550px;
 }
 
 .bioPart2{
   position: absolute;
   left: 24%;
-  top: 1350px;
+  top: 1220px;
   width: 750px;
 }
 .bioPart3{
   position: absolute;
   left: 24%;
-  top: 1750px;
+  top: 2500px;
   width: 750px;
 }
 .bioPart4{
   position: absolute;
   left: 24%;
-  top: 2150px;
+  top: 2900px;
   width: 750px;
 }
 
@@ -464,8 +465,14 @@ body {
   position: absolute;
   top: 25%;
   left: 18%;
+  width: 890px;
 }
-
+.exposition2 {
+  position: absolute;
+  top: 125%;
+  left: 18%;
+  width: 890px;
+}
 .expo-id{
   width: 15px;
   font-size: 10px !important;

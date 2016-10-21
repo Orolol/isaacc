@@ -1,0 +1,81 @@
+{
+  "expo" : [{
+    "id": "1",
+    "lieu": "GALERIE TIVEY-FAUCON, PARIS",
+    "pays": "France",
+    "annee": "1965",
+    "nom" : "FEMMES"
+  },{
+    "id": "2",
+    "lieu": "GALERIE VENDÔME, PARIS",
+    "pays": "France",
+    "annee": "1975",
+    "nom" : "AUTOUR DE CHAGALL, LES PEINTRES JUIFS D'EXPRESSION FRANÇAISE"
+  },{
+    "id": "3",
+    "lieu": "CENTRE RACHI, PARIS",
+    "pays": "France",
+    "annee": "1979",
+    "nom" : "PEINTRES ISRAÉLIENS"
+  },{
+    "id": "4",
+    "lieu": "SALON DE L'HÔTEL DE VILLE, DRANCY",
+    "pays": "France",
+    "annee": "1985",
+    "nom" : "PORTRAIT"
+  },{
+    "id": "5",
+    "lieu": "GALERIE LILIANE FRANÇOIS, PARIS",
+    "pays": "France",
+    "annee": "1994",
+    "nom" : ""
+  },{
+    "id": "6",
+    "lieu": "ASSOCIATION POUR LA FONDATION MÉMOIRE D'AUSCHWITZ, BOBIGNY.",
+    "pays": "France",
+    "annee": "1994",
+    "nom" : ""
+  },{
+    "id": "7",
+    "lieu": "LE TOIT DE LA GRANDE ARCHE, PARIS",
+    "pays": "France",
+    "annee": "1995",
+    "nom" : "LIBRE COMME L'ART"
+  },{
+    "id": "8",
+    "lieu": " MUSÉE DES BEAUX-ARTS DE REIMS",
+    "pays": "France",
+    "annee": "1995",
+    "nom" : "CRÉER POUR SURVIVRE"
+  },{
+    "id": "9",
+    "lieu": "PALAIS DE L'EUROPE, MENTON",
+    "pays": "France",
+    "annee": "1996",
+    "nom" : "FEMMES MODERNES"
+  },{
+    "id": "10",
+    "lieu": "MUSÉE DES BEAUX-ARTS, MENTON",
+    "pays": "France",
+    "annee": "1999",
+    "nom" : "LES MAÎTRES DU PORTRAIT CONTEMPORAIN"
+  },{
+    "id": "11",
+    "lieu": "KIRON GALERIE, PARIS",
+    "pays": "France",
+    "annee": "1999",
+    "nom" : "PETITS FORMATS"
+  },{
+    "id": "12",
+    "lieu": "MUSÉE DE LA PRÉHISTOIRE RÉGIONALE, MENTON",
+    "pays": "France",
+    "annee": "2000",
+    "nom" : "L'AUTOPORTRAIT-NARCISSE RÉFLÉCHI"
+  },{
+    "id": "13",
+    "lieu": "MUNICIPALITÉ DE SARCELLES ET ECOLE D’ART JANINE HADDAD",
+    "pays": "France",
+    "annee": "2013",
+    "nom" : "16E BIENNALE INTERNATIONALE DE LA GRAVURE DE SARCELLES"
+  }]
+}
