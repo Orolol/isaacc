@@ -6,91 +6,12 @@ import {translate}                  from 'react-i18next';
 class ModuleManager extends React.Component {
     constructor() {
         super();
-        this.showForm = this.showForm.bind(this);
-        this.hideForm = this.hideForm.bind(this);
-        this.showMenu = this.showMenu.bind(this);
-        this.hideMenu = this.hideMenu.bind(this);
-        this.showViewManager = this.showViewManager.bind(this);
-        this.hideViewManager = this.hideViewManager.bind(this);
-        this.state = {
-            showForm: false,
-            showMenu: false,
-            showViewManager: false,
-        };
     }
 
-    componentDidMount(){
-        ViewParametersStore.updateMetricsList();
-    }
-
-    handleDateChange(start_date, end_date) {
-        CalendarStore.updateRangeDate(start_date, end_date);
-    }
-
-    showForm() {
-        this.setState({showForm: true})
-        this.setState({showViewManager: false})
-    }
-    hideForm() {
-        this.setState({showForm: false})
-    }
-    showMenu() {
-        this.setState({showMenu: true})
-    }
-    hideMenu() {
-        this.setState({showMenu: false})
-    }
-    showViewManager() {
-        this.setState({showViewManager: true})
-        this.setState({showForm: false})
-    }
-    hideViewManager() {
-        this.setState({showViewManager: false})
-    }
 
     render() {
         const {t} = this.props;
-        let dateFormatOutput = t('common:dateFormat');
-        let dateFormatDisplay = t('common:dateFormat');
-
-        let handleDateChange = this.handleDateChange;
-        let renderModule,
-            cmTabClassName,
-            clTabClassName,
-            cmLink,
-            clLink,
-            renderForm;
-        let activeModule = this.context.params.module;
-        let account_id = this.context.params.account;
-        let project = this.props.location.query.project;
-
-        let projectManagerLink = {
-            pathname: "/" + account_id + "/projectmanager/"
-        };
-        let campaignManagerLink = {
-            pathname: "/" + account_id + "/campaignmanager/"
-        };
-        let dashboardManagerLink = {
-            pathname: "/" + account_id + "/dashboardmanager/"
-        };
-        let conversionManagerLink = {
-            pathname: "/" + account_id + "/conversionmanager/"
-        };
-        let siteofferManagerLink = {
-            pathname: "/" + account_id + "/siteoffermanager/"
-        };
-        let insertionManagerLink = {
-            pathname: "/" + account_id + "/insertionmanager/"
-        };
-        let creativeManagerLink = {
-            pathname: "/" + account_id + "/creativemanager/"
-        };
-        let reportManagerLink = {
-            pathname: "/" + account_id + "/reportmanager/"
-        };
-
-
-
+        
         if (activeModule === undefined) {
             renderModule = '';
         } else if (activeModule === 'projectmanager' && /^r/.test(this.context.access.campaign_access)) {

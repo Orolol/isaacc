@@ -88,7 +88,7 @@
 
 .oeuvre-box{
     position: fixed;
-    
+
     height: 200px;
     left: 10%;
     top: 85%;
@@ -98,12 +98,12 @@
     position: absolute;
     white-space: nowrap;
     left: 800px;
-    
+
 }
 .oeuvre-categorie{
     position: absolute;
     white-space: nowrap;
-    
+
 }
 
 .oeuvre-details{
@@ -179,7 +179,7 @@
   }
 
   html, body, .mainMenu, .oeuvre, .homme, .ng-scope {
-    min-height: 100% !important;
+
     height: 100%;
     font-family: sans-serif;
 }
@@ -223,20 +223,20 @@
 .menuLeft .menu{
     position: fixed;
     left: 6%;
-    top: 11%;    
+    top: 11%;
 }
 
 .menuRight .menu{
     position: fixed;
     left: 84%;
-    top: 24%;    
+    top: 24%;
 }
 
-body { 
+body {
     font:book;
 
 
-}  
+}
 .rad3.rad4.rad5.rad6.rad7.menu {
     margin: 10px;
     height: 100px;
@@ -254,7 +254,7 @@ body {
 .menu-title {
     font-size: 22px;
     font-weight: bold;
-    
+
 }
 .menu li {
 
@@ -534,4 +534,15 @@ width: 40px;
     text-decoration: none;
     text-transform: none;
     color: black;
+}
+
+.myGrid {
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    width: 800px;
+    height: 500px;
+  }
+  .ngViewport.ng-scope{
+    min-height: 200px !important;
 }

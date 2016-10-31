@@ -1,15 +1,15 @@
 'use strict';
 
 var express = require('express');
-var controller = require('./tableau.controller');
 
-var router = express.Router();
 
-router.get('/', controller.index);
-router.get('/:id', controller.show);
-router.post('/', controller.create);
-router.put('/:id', controller.update);
-router.patch('/:id', controller.update);
-router.delete('/:id', controller.destroy);
+exports.index = function(req, res) {
 
-module.exports = router;
+  var fs = require("fs");
+  
+  var content = fs.readFileSync("server/api/tableau/tableaux.json");
+
+  return res.status(200).json(content);
+};
+
+// Query the DB

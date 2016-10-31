@@ -17,18 +17,20 @@
   <!-- endbuild -->
   <!-- build:css({.tmp,client}) app/app.css -->
   <link rel="stylesheet" href="app/app.css">
-  <script src="lib/angular.js"></script>  
-  <script src="lib/angular-cookies.js"></script>  
-  <script src="lib/angular-resource.js"></script>  
-  <script src="lib/angular-sanitize.js"></script> 
-  <script src="lib/angular-ui-router.js"></script> 
-  <script src="lib/angular-route.js"></script> 
-  <script src="lib/ui-bootstrap.js"></script> 
-  <script src="lib/angular-gettext.min.js"></script> 
+  <script src="lib/angular.js"></script>
+  <script src="lib/angular-cookies.js"></script>
+  <script src="lib/angular-resource.js"></script>
+  <script src="lib/angular-sanitize.js"></script>
+  <script src="lib/ui-grid.min.js"></script>
+  <script src="lib/angular-ui-router.js"></script>
+  <script src="lib/angular-route.js"></script>
+  <script src="lib/ui-bootstrap.js"></script>
+  <script src="lib/angular-gettext.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
 
-  <script src="lib/angular-animate.min.js"></script>
 
 
+  <link rel="styleSheet" href="lib/ui-grid-style.css"/>
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 
 
@@ -39,55 +41,60 @@
 <body>
   <div ng-app="wssApp"  ng-controller="MainCtrl">
     <div ng-view></div>
-    <div> 
+    <div>
       <div class="menuLeft" ng-show="showMenu()" ng-class="getColorMenu()">
         <div class="menu-title" ng-class="getColorMenu()" translate>L'OEUVRE</div>
         <div class="menu">
           <ul>
             <li>
-              <a href="#"><span translate>LA MEMOIRE</span></a> 
+              <a href="#"><span translate>LA MEMOIRE</span></a>
               <ul>
                 <li>
                   <a href="/page/oeuvre/memoire/gravure"><span translate>GRAVURE</span></a>
                 </li>
                 <li>
-                  <a href="/page/oeuvre/memoire/peinture"><span translate>PEINTURE</span></a> 
+                  <a href="/page/oeuvre/memoire/peinture"><span translate>PEINTURE</span></a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#"><span translate>NATURE MORTE</span></a> 
+              <a href="#"><span translate>NATURE MORTE</span></a>
               <ul>
                 <li>
                   <a href="/page/oeuvre/nature/gravure"><span translate>GRAVURE</span></a>
                 </li>
                 <li>
-                  <a href="/page/oeuvre/nature/peinture"><span translate>PEINTURE</span></a> 
+                  <a href="/page/oeuvre/nature/peinture"><span translate>PEINTURE</span></a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#"><span translate>PAYSAGES</span></a> 
+              <a href="#"><span translate>PAYSAGES</span></a>
               <ul>
                 <li>
                   <a href="/page/oeuvre/paysages/gravure"><span translate>GRAVURE</span></a>
                 </li>
                 <li>
-                  <a href="/page/oeuvre/peinture/peinture"><span translate>PEINTURE</span></a> 
+                  <a href="/page/oeuvre/peinture/peinture"><span translate>PEINTURE</span></a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#"><span translate>PORTRAIT</span></a> 
+              <a href="#"><span translate>PORTRAIT</span></a>
               <ul>
                 <li>
                   <a href="/page/oeuvre/portrait/gravure"><span translate>GRAVURE</span></a>
                 </li>
                 <li>
-                  <a href="/page/oeuvre/protrait/peinture"><span translate>PEINTURE</span></a> 
+                  <a href="/page/oeuvre/protrait/peinture"><span translate>PEINTURE</span></a>
                 </li>
               </ul>
             </li>
+            <li>
+              <a href="/page/grid/list"><span translate>INDEX</span></a>
+
+            </li>
+
 
           </ul>
         </div>
@@ -98,30 +105,30 @@
         <div class="menu">
           <ul>
             <li>
-              <a href="/page/homme/biographie/biographie"><span translate>BIOGRAPHIE</span></a> 
+              <a href="/page/homme/biographie/biographie"><span translate>BIOGRAPHIE</span></a>
               <ul>
                 <li>
                   <a href="/page/homme/biographie/biographie#part1"><span>1923-1939</span></a>
                 </li>
                 <li>
-                  <a href="/page/homme/biographie/biographie#part2"><span>1939-1945</span></a> 
+                  <a href="/page/homme/biographie/biographie#part2"><span>1939-1945</span></a>
                 </li>
                 <li>
                   <a href="/page/homme/biographie/biographie#part3"><span>1945-1957</span></a>
                 </li>
                 <li>
-                  <a href="/page/homme/biographie/biographie#part4"><span>1957-2011</span></a> 
+                  <a href="/page/homme/biographie/biographie#part4"><span>1957-2011</span></a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="/page/homme/exposition/exposition"><span translate>EXPOSITION</span></a> 
+              <a href="/page/homme/exposition/exposition"><span translate>EXPOSITION</span></a>
             </li>
             <li>
-              <a href="/page/homme/catalogue/catalogue"><span translate>CATALOGUE</span></a> 
+              <a href="/page/homme/catalogue/catalogue"><span translate>CATALOGUE</span></a>
             </li>
             <li>
-              <a href="/page/homme/contact/contact"><span translate>CONTACT</span></a> 
+              <a href="/page/homme/contact/contact"><span translate>CONTACT</span></a>
             </li>
           </ul>
         </div>
@@ -130,11 +137,11 @@
       <div class="isaacTopRight" ng-show="showIsaac()" ng-class="getColorMenu()">ISAAC CELNIKIER</div>
     </div>
 
-    
+
   </div>
   <!-- build:js({.tmp,client}) app/app.js -->
   <script src="app/app.js"></script>
-  <script src="po/translation.js"></script> 
+  <script src="po/translation.js"></script>
   <!-- injector:js -->
   <!-- endinjector -->
   <!-- endbuild -->

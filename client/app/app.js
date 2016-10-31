@@ -3,11 +3,12 @@
 var wssApp = angular.module('wssApp', [
   'ngCookies',
   'ngRoute',
-  'ngAnimate',
   'ngResource',
   'ngSanitize',
   'gettext',
-  'ui.bootstrap'
+  'ui.bootstrap',
+   'ui.grid',
+   'ui.grid.pagination'
   ])
 .config(['$routeProvider','$locationProvider', function ( $routeProvider,$locationProvider) {
   $locationProvider.html5Mode(true);
@@ -27,6 +28,11 @@ var wssApp = angular.module('wssApp', [
   }).when('/page/homme/:nameHomme*', {
     templateUrl: function(urlattr){
       return 'partials/homme/'+ urlattr.nameHomme +  '.html';
+    },
+    controller: 'MainCtrl'
+  }).when('/page/grid/:actionGrid*', {
+    templateUrl: function(urlattr){
+      return 'partials/grid.html';
     },
     controller: 'MainCtrl'
   }).when('/show/:name*', {
@@ -70,8 +76,8 @@ wssApp.service("menuService", [
     this.getMenuColor = function() {
       return menuColor;
     };
-    this.setMenuColor = function(bool) {
-      menuColor = bool;
+    this.setMenuColor = function(color) {
+      menuColor = color;
     };
   }
   ]);
@@ -80,7 +86,31 @@ wssApp.controller('MainCtrl', ['$scope','$routeParams', 'menuService' ,'gettextC
   function($scope, $routeParams, menuService, gettextCatalog, $http){
 
 
+    $scope.gridOptions = {
+      onRegisterApi: function(gridApi){
+       $scope.gridApi = gridApi;
+     },
+     paginationPageSizes: [25, 50, 75],
+     paginationPageSize: 25,
+     enableSorting: true,
+     columnDefs: [
+       { field: 'Titre' },
+       { field: 'Type' },
+       { field: 'Support' },
+       { field: 'Date' },
+       { field: 'Hauteur' },
+       { field: 'Largeur' },
+     ],
+      data: this.data,
+   };
 
+   $http({
+     method: 'GET',
+     url: '/index'
+   })
+   .success(function (data, status, headers, config) {
+     $scope.gridOptions.data =  data;
+   })
 
     $scope.expos = {};
 
@@ -116,42 +146,50 @@ wssApp.controller('MainCtrl', ['$scope','$routeParams', 'menuService' ,'gettextC
     $scope.ColorMenu  = "menuWhite";
 
     if($routeParams.language !== undefined){
-      menuService.setShowMenu(true); 
+      menuService.setShowMenu(true);
       menuService.setLanguage($routeParams.language);
-      gettextCatalog.setCurrentLanguage(menuService.getLanguage()); 
-      
-    }  
+      gettextCatalog.setCurrentLanguage(menuService.getLanguage());
+
+    }
     if($routeParams.nameOeuvre !== undefined){
       console.log('oeuvre');
       menuService.setMenuColor("menuWhite");
       menuService.setShowMenu(true);
-      menuService.setShowIsaac(true); 
-      gettextCatalog.setCurrentLanguage(menuService.getLanguage()); 
-      
-      
+      menuService.setShowIsaac(true);
+      gettextCatalog.setCurrentLanguage(menuService.getLanguage());
+
+
     }
     if($routeParams.nameHomme !== undefined){
       console.log('homme');
       menuService.setMenuColor("menuBlack");
       menuService.setShowMenu(true);
-      menuService.setShowIsaac(true); 
+      menuService.setShowIsaac(true);
+      gettextCatalog.setCurrentLanguage(menuService.getLanguage());
+
+    }
+    if($routeParams.actionGrid !== undefined){
+      console.log('grid');
+      menuService.setMenuColor("menuBlack");
+      menuService.setShowMenu(true);
+      menuService.setShowIsaac(true);
       gettextCatalog.setCurrentLanguage(menuService.getLanguage());
 
     }
 
     $scope.showIsaac = function () {
-      return menuService.getShowIsaac();      
+      return menuService.getShowIsaac();
     };
     $scope.showMenu = function () {
-      return menuService.getShowMenu();      
+      return menuService.getShowMenu();
     };
     $scope.getColorMenu = function () {
-      return menuService.getMenuColor();      
+      return menuService.getMenuColor();
     };
 
     $scope.langague = $routeParams.language;
-    
-    
+
+
   }
   ]);
 
@@ -244,6 +282,3 @@ wssApp.directive('slider', function($timeout) {
     templateUrl: 'partials/templateurl.html'
   };
 });
-
-
-
